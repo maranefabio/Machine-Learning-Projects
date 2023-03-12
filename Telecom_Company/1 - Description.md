@@ -1,7 +1,13 @@
 # Description - Telecommunications company customer churn
 
-This project uses Scikit-Learn and XGBoost to predict customer churn for a hypothetical telecommunications company from Kaggle. 
+This project uses <b>Supervised Machine Learning</b> algorithms to <b>predict customer churn</b> for a hypothetical telecommunications company.
+Foremost, the data is retrieved from a CSV file available in <i>Kaggle</i>. Then, the data is <b>balanced, labeled, separated and applied into 9 different algorithms</b> - one of them used as a baseline. Then, the results are gathered and for further comparison. The algorithms used belongs to the modules <i>Scikit-Learn and XGBoost</i>:
+- Logistic Regression (baseline);
+- Support Vector Classifier;
+- K-Nearest Neighbors (Both Euclidean and Chebyshev metrics);
+- Gaussian and Bernoulli Naïve-Bayes Classifier;
+- Decision Tree Classifier;
+- Random Forest Classifier;
+- XGBoost Classifier.
 
-As the data was very unbalanced, it was necessary to use SKLearn's Synthetic Minority Oversampling Technique (SMOTE) to artificially balancing. As SMOTE only accepts numerical data, all cathegorical data was translated into numerical by the SKLearn tool LabelEncoder.
-
-With cleanned and prepared data, K-Nearest Neighbors, Decision Tree Classifier, Support Vector Machine, Random Forest and XGBoost algorithms were applied and compared to a DummyClassifier.
+Source: https://www.kaggle.com/datasets/mnassrib/telecom-churn-datasets?select=churn-bigml-20.csv
